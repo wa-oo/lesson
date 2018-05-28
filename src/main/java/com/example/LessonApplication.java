@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-
 public class LessonApplication {
 	static String[] name = {"刘一","陈二","张三","李四","王五","赵六","孙七","周八","吴九","郑十"};
 	static String[] no = new String[10];
@@ -55,12 +54,10 @@ public class LessonApplication {
 	//签到功能
 	@Test
 	public static void singIn() {
-
 		System.out.println("****************************");
 		System.out.println("签到:			(y/n)");
 		int j = 0;
 		int k = 0;
-		
 		for (int i = 0; i < name.length; i++) {
 			System.out.print(name[i]+":");
 			
@@ -81,7 +78,6 @@ public class LessonApplication {
 				singIn();
 			}
 		}
-		
 		System.out.println("****************************");
 	}
 
@@ -100,7 +96,6 @@ public class LessonApplication {
 		case "1":
 			System.out.println("总人数："+name.length+"个");
 			System.out.println("签到人数："+count+"个");
-			
 			System.out.println("没签人数："+s+"个");
 			System.out.print("是否返回上一级(y/n)：");
 			String string = sin.next();
@@ -126,6 +121,7 @@ public class LessonApplication {
 			}
 			break;
 		case "q":
+			//退出系统
 			System.exit(0);
 			break;
 		}
